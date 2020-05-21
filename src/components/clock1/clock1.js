@@ -12,8 +12,11 @@ class Clock1 extends React.Component {
       cells: [],
       grid: '',
       minutes: 0,
-      description: ''
+      description: '',
+      show: 'off'
     }
+
+    this.handleClick = this.handleClick.bind(this)
   }
 
   componentDidMount() {
@@ -55,15 +58,24 @@ class Clock1 extends React.Component {
     this.setState({ grid })
   }
 
+  handleClick() {
+    this.state.show === 'off' ? this.setState({ show: 'on' }) : this.setState({ show: 'off' })
+  }
+
   render() {
-    if (!this.state.minutes) return null
+    if (!this.state.minutes) return (<div>loading...</div>)
     // console.log(this.state.cells)
     return (
         <div className="clock1 clock">    
           <div className="clockgrid">
             {this.state.grid}
           </div>
-          <Modal { ...this.state } />
+          <div  onClick={this.handleClick} className={`modal-container ${this.state.show === 'off' ? 'modal-off' : ''}`}>
+            <Modal { ...this.state }/>
+          </div>
+          <div onClick={this.handleClick} className="info-button">
+            i
+          </div>
         </div> 
     )
   }

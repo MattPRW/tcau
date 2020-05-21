@@ -1,5 +1,5 @@
 {
   "clock1": "Every circle represents a minute. Starting from 12:00am a circle will be filled every minute. The circles change position every second. Completely pointless",
   "clock2": "The minutes past midnight are calculated and converted to base 3 eg. 11:59pm = 1440 minutes = 1222100. Each circle represents a digit, with the three colours representing a 0, 1, or 2. Absolutely no need. ",
-  "clock3": "The bars represent the current day, hour, minute and second and fill up over time. Unnecessary."
+  "clock3": "The bars represent the current day, hour, minute and second. As time passes the bars fill up. Unnecessary."
 }

@@ -12,8 +12,11 @@ class Clock2 extends React.Component {
       grid: '',
       minutes: 0,
       opacity: 'opacity',
-      description: ''
+      description: '',
+      show: 'off'
     }
+
+    this.handleClick = this.handleClick.bind(this)
   }
 
   componentDidMount() {
@@ -52,6 +55,10 @@ class Clock2 extends React.Component {
     // console.log(this.state.cells)
   }
 
+  handleClick() {
+    this.state.show === 'off' ? this.setState({ show: 'on' }) : this.setState({ show: 'off' })
+  }
+
   render() {
     if (!this.state.cells) return null
     // console.log(this.state.cells)
@@ -73,8 +80,12 @@ class Clock2 extends React.Component {
               </div>
             </div>
           </div>
-          <Modal { ...this.state } />
-          <div>i</div>
+          <div  onClick={this.handleClick} className={`modal-container ${this.state.show === 'off' ? 'modal-off' : ''}`}>
+            <Modal { ...this.state }/>
+          </div>
+          <div onClick={this.handleClick} className="info-button">
+            i
+          </div>
         </div>
     )
   }

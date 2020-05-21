@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbuttons from '../navbutton/navbuttons'
+import { Link, withRouter } from 'react-router-dom'
 import './navbar.css';
 
 class Navbar extends React.Component {
@@ -17,7 +18,9 @@ render() {
   <div className='navbar-container'>
     <div className='navbar'>
       <div className='title-container'>
-        <h3>t.c.a.u</h3>        
+      <Link to="/">
+        <h3>t.c.a.u</h3> 
+      </Link>       
       </div>
       <div className='nav-buttons'>
         <Navbuttons />
@@ -28,4 +31,4 @@ render() {
 }
 }
 
-export default Navbar
+export default withRouter(Navbar)

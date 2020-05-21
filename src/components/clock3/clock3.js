@@ -2,13 +2,10 @@ import React from 'react'
 import './clock3.css'
 import Modal from '../modal/modal'
 import description from '../../clock-description.json'
-// import Info from '../info/info'
 
 class Clock3 extends React.Component {
   constructor() {
     super()
-
-    
 
     this.state = {
       cells: [],
@@ -71,7 +68,7 @@ class Clock3 extends React.Component {
               
             </div>
           </div>
-          <div  className={`modal-container ${this.state.show === 'off' ? 'modal-off' : ''}`}>
+          <div  onClick={this.handleClick} className={`modal-container ${this.state.show === 'off' ? 'modal-off' : ''}`}>
             <Modal { ...this.state }/>
           </div>
           <div onClick={this.handleClick} className="info-button">
