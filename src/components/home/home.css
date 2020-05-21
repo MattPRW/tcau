@@ -1,0 +1,45 @@
+.home{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.hero-text-container{
+  display:flex;
+  justify-content: center;
+}
+
+.hero-text{
+  display:flex;
+  text-align: left;
+  line-height: 1.6;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home-button-container{
+  display:flex;
+  justify-content: center;
+}
+
+h1{
+  color:#6F616A;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size:48px;
+  }
+  .hero-text-container{
+    min-height: 67vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 96px;
+  }
+  .hero-text-container{
+    height: 75vh;
+  }
+}

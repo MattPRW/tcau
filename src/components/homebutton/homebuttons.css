@@ -1,0 +1,30 @@
+
+.home-button-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.home-button{
+  margin: 8px 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-button {
+    width: 66px;
+    height: 44px;
+  }
+  .home-button-list{
+    width:288px;  
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-button {
+    width: 120px;
+    height: 80px;
+  }
+  .home-button-list{
+    width:576px;  
+  }
+}

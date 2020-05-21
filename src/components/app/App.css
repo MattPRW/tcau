@@ -1,0 +1,47 @@
+.btn-1{
+  opacity: 0.8;
+}
+
+.btn-2{
+  opacity: 0.8;
+}
+
+.btn-3{
+  opacity: 0.8;
+}
+
+.color-1{
+  background-color:#58756E;
+}
+
+.color-2{
+  background-color:#7D969D;
+}
+
+.color-3{
+  background-color:#718199;
+}
+
+.button:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.clock{
+  display:flex;
+  flex-direction: column;
+}
+
+.info-button{
+  position:absolute;
+  bottom: 3%;
+  right:5%;
+  font-size: 36px;
+  /* padding-bottom: 5%;
+  padding-right: 5%; */
+}
+
+.modal-off{
+  display:none;
+}
+

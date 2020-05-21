@@ -1,0 +1,30 @@
+.modal-container{
+  position: absolute;
+  width: 80%;
+  z-index: 1;
+  background-color:#6F616A;
+  opacity: 95%;
+}
+
+.modal-text{
+  color: #EDC2C2
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-text{
+    margin: 30px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-container{
+    width: 60%;
+  }
+  .modal-text{
+    margin: 80px;
+    font-size: 48px;
+  }
+}
+
+

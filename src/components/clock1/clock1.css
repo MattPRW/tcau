@@ -1,0 +1,66 @@
+.clock1{
+  display:flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.clockgrid{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.cell{
+  animation: fadeIn ease 1s;
+  border-radius: 100%;
+}
+
+.on{
+  background-color: #6F616A;
+  border: 1px solid #6F616A;
+}
+
+.off{
+  border: 1px solid #6F616A;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .clockgrid{
+    height: 65vh;
+    min-width: 100vw;
+    max-width: 100vw;
+  }
+  .cell{
+    height: 2px;
+    width: 2px;
+    margin: 3px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .clockgrid{
+    height: 80vh;
+    min-width: 80vw;
+    max-width: 80vw;
+  }
+  .cell{
+    height: 5px;
+    width: 5px;
+    margin: 0 15px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
