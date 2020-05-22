@@ -33,11 +33,23 @@
   align-items: center;
 }
 
+.fa-arrow-left{
+  color:#6F616A;
+}
+
+.back-button{
+  position:absolute;
+  bottom: 3%;
+  left:5%;
+  font-size: 36px;
+}
+
 .info-button{
   position:absolute;
   bottom: 3%;
   right:5%;
   font-size: 36px;
+  color:#6F616A;
   /* padding-bottom: 5%;
   padding-right: 5%; */
 }

@@ -73,6 +73,9 @@ class Clock1 extends React.Component {
           <div  onClick={this.handleClick} className={`modal-container ${this.state.show === 'off' ? 'modal-off' : ''}`}>
             <Modal { ...this.state }/>
           </div>
+          <div className="back-button">
+            {'<'}
+          </div>
           <div onClick={this.handleClick} className="info-button">
             i
           </div>

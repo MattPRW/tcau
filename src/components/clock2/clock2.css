@@ -1,7 +1,6 @@
 .clock2{
   display:flex;
   justify-content: center;
-  padding-top: 25px;
 }
 
 .cell2{
@@ -26,14 +25,20 @@
     min-height: 95vw;
     max-height: 95vw;
   }
+  .clock2{
+    padding-top: 10%;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .outside{
     min-width: 70vh;
     max-width: 70vh;
     min-height: 70vh;
     max-height: 70vh;
+  }
+  .clock2{
+    padding-top: 3%;
   }
 }
 
