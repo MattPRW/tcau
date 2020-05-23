@@ -2,6 +2,7 @@ import React from 'react'
 import './clock2.css'
 import Modal from '../modal/modal'
 import description from '../../clock-description.json'
+import { Link, withRouter } from 'react-router-dom'
 
 class Clock2 extends React.Component {
   constructor() {
@@ -83,9 +84,11 @@ class Clock2 extends React.Component {
           <div  onClick={this.handleClick} className={`modal-container ${this.state.show === 'off' ? 'modal-off' : ''}`}>
             <Modal { ...this.state }/>
           </div>
-          <div className="back-button">
-            {'<'}
-          </div>
+          <Link to="/">
+            <div className="back-button">
+              {'<'}
+            </div>
+          </Link>
           <div onClick={this.handleClick} className="info-button">
             i
           </div>
@@ -94,4 +97,4 @@ class Clock2 extends React.Component {
   }
 }
 
-export default Clock2
+export default withRouter(Clock2)

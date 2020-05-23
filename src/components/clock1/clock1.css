@@ -1,7 +1,7 @@
 .clock1{
   display:flex;
   justify-content: center;
-  padding-top: 25px;
+  padding-top: 1%;
 }
 
 .clockgrid{
@@ -28,8 +28,10 @@
   border: 1px solid #6F616A;
 }
 
-
 @media only screen and (max-width: 768px) {
+  .clock1{
+    padding:8%;
+  }
   .clockgrid{
     height: 65vh;
     min-width: 100vw;
@@ -42,9 +44,26 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 320px) {
+  
   .clockgrid{
+    height: 50vh;
+    min-width: 100vw;
+    max-width: 100vw;
+  }
+  .cell{
+    height: 2px;
+    width: 2px;
+    margin: 2px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .clock1{
     height: 80vh;
+  }
+  .clockgrid{
+    
     min-width: 80vw;
     max-width: 80vw;
   }

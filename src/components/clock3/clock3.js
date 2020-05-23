@@ -2,6 +2,7 @@ import React from 'react'
 import './clock3.css'
 import Modal from '../modal/modal'
 import description from '../../clock-description.json'
+import { Link, withRouter } from 'react-router-dom'
 
 class Clock3 extends React.Component {
   constructor() {
@@ -50,7 +51,7 @@ class Clock3 extends React.Component {
 
 
   render() {
-    if (!this.state.description) return null
+    if (!this.state.description) return (<div>loading...</div>)
     return (
         <div className="clock3 clock">    
           <div className="clockgrid shapes">
@@ -71,9 +72,11 @@ class Clock3 extends React.Component {
           <div  onClick={this.handleClick} className={`modal-container ${this.state.show === 'off' ? 'modal-off' : ''}`}>
             <Modal { ...this.state }/>
           </div>
-          <div className="back-button">
-            {'<'}
-          </div>
+          <Link to="/">
+            <div className="back-button">
+              {'<'}
+            </div>
+          </Link>
           <div onClick={this.handleClick} className="info-button">
             i
           </div>
@@ -82,4 +85,4 @@ class Clock3 extends React.Component {
     }
   }
 
-export default Clock3
+export default withRouter(Clock3)

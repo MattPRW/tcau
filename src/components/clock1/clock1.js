@@ -3,6 +3,7 @@ import _ from 'lodash'
 import './clock1.css'
 import Modal from '../modal/modal'
 import description from '../../clock-description.json'
+import { Link, withRouter } from 'react-router-dom'
 
 class Clock1 extends React.Component {
   constructor() {
@@ -73,9 +74,11 @@ class Clock1 extends React.Component {
           <div  onClick={this.handleClick} className={`modal-container ${this.state.show === 'off' ? 'modal-off' : ''}`}>
             <Modal { ...this.state }/>
           </div>
-          <div className="back-button">
-            {'<'}
-          </div>
+          <Link to="/">
+            <div className="back-button">
+              {'<'}
+            </div>
+          </Link>
           <div onClick={this.handleClick} className="info-button">
             i
           </div>
@@ -84,4 +87,4 @@ class Clock1 extends React.Component {
   }
 }
 
-export default Clock1
+export default withRouter(Clock1)
