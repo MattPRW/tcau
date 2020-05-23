@@ -61,7 +61,7 @@ class Clock2 extends React.Component {
   }
 
   render() {
-    if (!this.state.cells) return null
+    if (!this.state.cells) return (<div>loading...</div>)
     // console.log(this.state.cells)
     return (
         <div className="clock2 clock">    
@@ -81,7 +81,7 @@ class Clock2 extends React.Component {
               </div>
             </div>
           </div>
-          <div  onClick={this.handleClick} className={`modal-container ${this.state.show === 'off' ? 'modal-off' : ''}`}>
+          <div  onClick={this.handleClick} className={`modal-background ${this.state.show === 'off' ? 'modal-off' : ''}`}>
             <Modal { ...this.state }/>
           </div>
           <Link to="/">

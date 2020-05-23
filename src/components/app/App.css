@@ -1,13 +1,6 @@
-.btn-1{
+.button{
   opacity: 0.8;
-}
-
-.btn-2{
-  opacity: 0.8;
-}
-
-.btn-3{
-  opacity: 0.8;
+  margin: 8px 8px;
 }
 
 .color-1{
@@ -24,7 +17,7 @@
 
 .button:hover{
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 .clock{
@@ -50,8 +43,16 @@
   right:5%;
   font-size: 36px;
   color:#6F616A;
-  /* padding-bottom: 5%;
-  padding-right: 5%; */
+}
+
+.modal-background{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .modal-off{

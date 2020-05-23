@@ -18,7 +18,7 @@ class Modal extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="modal-container">
         <div className="modal-text">
           {this.props.description}
         </div>
