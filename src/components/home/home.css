@@ -26,12 +26,19 @@ h1{
   color:#6F616A;
 }
 
+.links{
+  font-size:14px;
+  position:fixed;
+  bottom:4%;
+  right:2%;
+}
+
 @media only screen and (max-width: 768px) {
   h1 {
     font-size:48px;
   }
   .hero-text-container{
-    min-height: 67vh;
+    min-height: 57vh;
   }
 }
 

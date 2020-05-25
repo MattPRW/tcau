@@ -54,22 +54,22 @@ class Clock3 extends React.Component {
     if (!this.state.description) return (<div>loading...</div>)
     return (
         <div className="clock3 clock">    
-          <div className="clockgrid shapes">
+          <div className="clock-bars">
             <div className='bar'>
-              <div style={{ height:this.state.time.day}} className='color-1 shape day'></div>
+              <div style={{ height:this.state.time.day}} className='color-1 bar-fill day'></div>
             </div>
             <div className='bar'>
-              <div style={{ height:this.state.time.hour}} className='color-2 shape hour'></div>
+              <div style={{ height:this.state.time.hour}} className='color-2 bar-fill hour'></div>
             </div>
             <div className='bar'>
-              <div style={{ height:this.state.time.minute}} className='color-3 shape minute'></div>
+              <div style={{ height:this.state.time.minute}} className='color-3 bar-fill minute'></div>
             </div>
             <div className='bar'>
-              <div style={{ height:this.state.time.second}} className='color-1 shape second'></div>
+              <div style={{ height:this.state.time.second}} className='color-1 bar-fill second'></div>
               
             </div>
           </div>
-          <div  onClick={this.handleClick} className={`modal-container ${this.state.show === 'off' ? 'modal-off' : ''}`}>
+          <div  onClick={this.handleClick} className={`modal-background ${this.state.show === 'off' ? 'modal-off' : ''}`}>
             <Modal { ...this.state }/>
           </div>
           <Link to="/">

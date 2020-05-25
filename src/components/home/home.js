@@ -15,6 +15,7 @@ class Home extends React.Component {
         <div className='home-button-container'>
           <HomeButtons />
         </div>
+        <div className="links">Made by <a href="http://www.matthewwilkie.com">Matt Wilkie</a></div>
       </div>
     )
   }

@@ -71,7 +71,7 @@ class Clock1 extends React.Component {
           <div className="clockgrid">
             {this.state.grid}
           </div>
-          <div  onClick={this.handleClick} className={`modal-container ${this.state.show === 'off' ? 'modal-off' : ''}`}>
+          <div  onClick={this.handleClick} className={`modal-background ${this.state.show === 'off' ? 'modal-off' : ''}`}>
             <Modal { ...this.state }/>
           </div>
           <Link to="/">

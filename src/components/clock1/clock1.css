@@ -1,11 +1,12 @@
 .clock1{
   display:flex;
   justify-content: center;
-  padding-top: 1%;
+  padding-top: 2%;
 }
 
 .clockgrid{
   display: flex;
+  display: -webkit-flex;
   flex-direction: row;
   flex-grow: 1;
   flex-wrap: wrap;

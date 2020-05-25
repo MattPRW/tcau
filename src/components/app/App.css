@@ -1,3 +1,13 @@
+a{
+  color:#6F616A;
+  text-decoration: none;
+}
+
+a:visited{
+  color:#6F616A;
+}
+
+
 .button{
   opacity: 0.8;
   margin: 8px 8px;
@@ -43,6 +53,10 @@
   right:5%;
   font-size: 36px;
   color:#6F616A;
+}
+
+.info-button:hover{
+  cursor: pointer;
 }
 
 .modal-background{
